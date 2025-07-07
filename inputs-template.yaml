@@ -1,0 +1,21 @@
+# This is a template for the inputs.yaml file
+# Data directory where the data will be stored and read from
+data_directory: "data"
+# Source database details
+source_connection_string: "mongodb://userName:password@url:port/"
+source_database: "databaseName"
+source_tier: "tierName"
+# Destination database details
+destination_connection_string: "mongodb://userName:password@url:port/"
+destination_database: "databaseName"
+destination_tier: "tierName"
+# Collections to exclude from the migration 
+exclude_collections: []
+# Collections to flag as migrated
+flag_collections: []
+# Enable or disable stages of the migration process, recommended to keep all enabled 
+run_database_connection_test: true
+run_source_data_export: true
+run_destination_data_backup: true
+run_review_prompt: true
+run_data_migration: true 
